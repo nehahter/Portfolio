@@ -30,7 +30,6 @@ section {
     padding: 20px 0; /* Decreased height by reducing padding */
     transition: all 0.3s ease;
     background: #00008B;
-    opacity: 0.2;
 }
 
 .navbar .max-width {
@@ -98,7 +97,7 @@ section {
 .name-title {
     font-size: 5rem;
     color: transparent;
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgba(0, 0, 139, 0.5);
     position: relative;
     overflow: hidden;
 }
