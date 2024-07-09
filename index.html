@@ -3,102 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neha Ponnekanti Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Neha Ponnekanti's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Neha Ponnekanti</h1>
-            <p>+91 9490203453 | <a href="mailto:nehaponline@gmail.com">nehaponline@gmail.com</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
-        </div>
-    </header>
-
-    <section class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> Python, C, HTML, CSS, SQL, PHP, LaTeX</li>
-                <li><strong>Tools and Frameworks:</strong> Flutter, XAMPP, MySQL Workbench, Arduino, Jupyter</li>
-                <li><strong>Soft Skills:</strong> Teamwork, Active Listening, Problem Solving, Critical Thinking, Leadership</li>
-                <li><strong>Interests:</strong> Algorithm Design, Data Science, Deep Learning, Artificial Intelligence, Web Development</li>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#"><span>Neha P.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#education" class="menu-btn">Education</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, I am</div>
+                <div class="name-title">Neha Ponnekanti</div>
+                <a href="/images/Resume - Neha Ponnekanti.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+            </div>
         </div>
     </section>
 
-    <section class="education">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Bachelor of Technology in Computer Science</strong> (Current CGPA: 9.82)
-                    <br>ICFAI Foundation for Higher Education, Hyderabad (2022 - 2026)</li>
-                <li><strong>Intermediate Percentage:</strong> 98.5
-                    <br>Sri Chaitanya Junior Kalasala, Hyderabad (2020 - 2022)</li>
-                <li><strong>10th grade Percentage:</strong> 98
-                    <br>Atomic Energy Central School - 1, Hyderabad (Passed in 2020)</li>
-            </ul>
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <p>I am a dedicated student with a passion for technology and innovation. Currently pursuing my Bachelor of Technology in Computer Science at ICFAI Foundation for Higher Education, I have a strong foundation in various programming languages and a keen interest in data science and artificial intelligence. My proactive approach and eagerness to learn have led me to actively participate in internships, projects, and hackathons, showcasing my ability to thrive in dynamic environments.</p>
+            </div>
         </div>
     </section>
 
-    <section class="experience">
-        <div class="container">
-            <h2>Work Experience</h2>
-            <ul>
-                <li><strong>SRR CloudExpertsGuru India Pvt Ltd | Intern</strong> (June 2024 - Present)
-                    <p>Contributing as an intern to empower businesses with the latest cloud technologies and tools, while learning collaboratively with a team of 4 to achieve goals faster and improve efficiency.</p>
-                </li>
-                <li><strong>Chegg India | Managed Network Expert</strong> (September 2023 - Present)
-                    <p>Solved Problems related to core Computer Engineering Subjects posted by students on the platform.</p>
-                </li>
-            </ul>
+    <section class="education" id="education">
+        <div class="max-width">
+            <h2 class="title">Education</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <div class="text">B.Tech</div>
+                        <p>ICFAI Foundation for Higher Education, Hyderabad</p>
+                        <p>CGPA: 9.82</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">12th Grade</div>
+                        <p>Sri Chaitanya Junior Kalasala, Hyderabad</p>
+                        <p>Grade: 98.5%</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">10th Grade</div>
+                        <p>Atomic Energy Central School - 1, Hyderabad</p>
+                        <p>Grade: 98%</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Actor Identification System</strong> | Machine Learning, Python (Completed - June 2024)
-                    <p>Achieved 88% accuracy in actor identification by implementing Support Vector Machine for classification, distinguishing between different actors’ faces. Enhanced model performance through effective data preprocessing techniques.</p>
-                    <p><a href="#">GitHub Repository</a></p>
-                </li>
-                <li><strong>Movie Database</strong> | HTML, CSS, JavaScript, SQL, PHP (Completed - April 2024)
-                    <p>Designed a visually appealing dynamic movie database website, featuring interactive content updates based on user selections. This user-friendly interface allows users to seamlessly browse, search, like, and retrieve movie details from the MySQL database, while also storing user reviews.</p>
-                    <p><a href="#">GitHub Repository</a></p>
-                </li>
-                <li><strong>Smart Mop</strong> | C++, ESP8266, L298N driver (Completed - November 2023)
-                    <p>Accomplished a 100% room-cleaning efficiency by engineering a Smart Mop system attached to a remote control car that we built, utilizing ultrasonic sensors, to clean an entire room. This project showcased my skills in embedded systems and IoT development. Secured first place at the IoT IGNITE Hackathon hosted by ICFAI Tech School.</p>
-                    <p><a href="#">GitHub Repository</a></p>
-                </li>
-                <li><strong>Run Raja Run Game</strong> | C#, AI, Unity (Ongoing)
-                    <p>A runner game, focusing on game design, character animation, and interactive elements to enhance user experience and engagement. Players experience and navigate dynamic environments, overcoming obstacles and collecting power-ups.</p>
-                    <p><a href="#">GitHub Repository</a></p>
-                </li>
-            </ul>
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My Skills & Experiences</div>
+                    <p>With expertise in Python, C, HTML, CSS, SQL, PHP, and LaTeX, along with tools like Flutter, XAMPP, MySQL Workbench, and Arduino, I have developed a strong technical skillset. My interests lie in algorithm design, data science, deep learning, AI, and web development. My experience includes working as an intern at SRR CloudExpertsGuru and a managed network expert at Chegg India, where I solved complex engineering problems and collaborated with teams to drive project success.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML & CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="line htmlcss"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>C</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line c"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>SQL</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="line sql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Flutter</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line flutter"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="scholarships">
-        <div class="container">
-            <h2>Scholarships</h2>
-            <ul>
-                <li><strong>Reliance Foundation Undergraduate Scholarship</strong> (2022 - 2026)
-                    <p>One of the 5000 Scholars across India to be granted a rewarding cash scholarship of Rs. 2,00,000.</p>
-                </li>
-                <li><strong>Legrand Empowering Scholarship Program</strong> (2022 - 2026)
-                    <p>Selected as one of the 104 recipients for the academic year 2022-23. Awarded a cash scholarship totaling Rs. 1,20,000 to date, with ongoing disbursements anticipated until 2026. Also a mentee in the Legrand Mentorship Program.</p>
-                </li>
-                <li><strong>ICFAI Tech Scholarship</strong> (2022 - Present)
-                    <p>Awarded a merit-based scholarship of Rs. 5,00,000 in the form of tuition fee waiver for all semesters so far.</p>
-                </li>
-            </ul>
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">Projects</h2>
+            <div class="project-content">
+                <div class="project">
+                    <div class="box">
+                        <div class="text">Actor Identification System</div>
+                        <p>Using machine learning and Python, I developed a system to identify actors with 88% accuracy. This project involved data preprocessing and the implementation of a Support Vector Machine classifier.</p>
+                        <p><a href="#">GitHub Repository</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="box">
+                        <div class="text">Movie Database</div>
+                        <p>Created a dynamic movie database website using HTML, CSS, JavaScript, SQL, and PHP. The website allows users to browse, search, like, and retrieve movie details from the MySQL database, as well as store user reviews.</p>
+                        <p><a href="#">GitHub Repository</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="box">
+                        <div class="text">Smart Mop</div>
+                        <p>Engineered a Smart Mop system attached to a remote control car, achieving 100% room-cleaning efficiency using ultrasonic sensors. This project won first place at the IoT IGNITE Hackathon.</p>
+                        <p><a href="#">GitHub Repository</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="box">
+                        <div class="text">Run Raja Run Game</div>
+                        <p>Currently developing a runner game in Unity using C# and AI, focusing on game design, character animation, and interactive elements to enhance user experience.</p>
+                        <p><a href="#">GitHub Repository</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 Neha Ponnekanti</p>
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact</h2>
+            <p>Connect with me</p>
+            <div class="socials">
+                <a href="https://github.com/nehaponline" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/neha-ponnekanti" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://twitter.com/nehaponline" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
         </div>
-    </footer>
+    </section>
 </body>
 </html>
