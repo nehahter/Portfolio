@@ -96,12 +96,12 @@ section {
 .name-title {
     font-size: 5rem;
     color: transparent;
-    -webkit-text-stroke: 1px rgba(0, 0, 139, 0.5);
+    -webkit-text-stroke: 1px #00008B;
     position: relative;
     overflow: hidden;
-}
-
-.name-title::before {
+  }
+  
+  .name-title::before {
     content: "Neha Ponnekanti";
     position: absolute;
     width: 100%;
@@ -109,7 +109,8 @@ section {
     overflow: hidden;
     white-space: nowrap;
     animation: typewriter 6s linear infinite;
-}
+    transition: ease-in-out, color ease-in-out;
+  }
 
 @keyframes typewriter {
     0% {
