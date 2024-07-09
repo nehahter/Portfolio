@@ -27,9 +27,9 @@ section {
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 20px 0; /* Decreased height by reducing padding */
     transition: all 0.3s ease;
-    background: #111;
+    background: rgba(0, 0, 139, 0.5); /* Transparent version of #00008B */
 }
 
 .navbar .max-width {
@@ -61,7 +61,7 @@ section {
 }
 
 .navbar .menu li a:hover {
-    background-color: #00008B;
+    background-color: rgba(0, 0, 139, 0.5);
     transition: background 0.3s ease;
 }
 
@@ -97,7 +97,7 @@ section {
 .name-title {
     font-size: 5rem;
     color: transparent;
-    -webkit-text-stroke: 1px #00008B;
+    -webkit-text-stroke: 1px rgba(0, 0, 139, 0.5);
     position: relative;
     overflow: hidden;
 }
@@ -118,14 +118,14 @@ section {
         color: transparent;
     }
     40% {
-        color: #00008B;
+        color: rgba(0, 0, 139, 0.5);
     }
     50% {
-        color: #00008B;
+        color: rgba(0, 0, 139, 0.5);
     }
     90% {
         width: 100%;
-        color: #00008B;
+        color: rgba(0, 0, 139, 0.5);
     }
     100% {
         width: 0;
@@ -139,19 +139,19 @@ section {
 
 .home-content > a {
     display: inline-block;
-    background: #00008B;
+    background: rgba(0, 0, 139, 0.5);
     color: #fff;
     font-size: 25px;
     padding: 15px 36px;
     margin-top: 3.4rem;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #00008B;
+    border: 2px solid rgba(0, 0, 139, 0.5);
     transition: all 0.3s ease;
 }
 
 .home-content > a:hover {
-    color: #00008B;
+    color: rgba(0, 0, 139, 0.5);
     background: none;
 }
 
@@ -209,7 +209,7 @@ section {
 }
 
 .services .serv-content .card:hover, .project-content .project:hover {
-    background: #00008B;
+    background: rgba(0, 0, 139, 0.5);
 }
 
 .services .serv-content .card .box, .project-content .project .box {
@@ -247,19 +247,19 @@ section {
 
 .left a {
     display: inline-block;
-    background: #00008B;
+    background: rgba(0, 0, 139, 0.5);
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #00008B;
+    border: 2px solid rgba(0, 0, 139, 0.5);
     transition: all 0.3s ease;
 }
 
 .left a:hover {
-    : #00008B;
+    color: rgba(0, 0, 139, 0.5);
     background: none;
 }
 
@@ -292,7 +292,7 @@ section {
     height: 100%;
     left: 0;
     top: 0;
-    background: #00008B;
+    background: rgba(0, 0, 139, 0.5);
 }
 
 .skills-content .right .python::before {
@@ -320,13 +320,13 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-: #111;
+    background-color: #111;
 }
 
 .socials a {
     display: inline-block;
     margin: 0 10px;
-    background: #00008B;
+    background: rgba(0, 0, 139, 0.5);
     color: #fff;
     padding: 10px 20px;
     border-radius: 6px;
@@ -334,7 +334,7 @@ section {
 }
 
 .socials a:hover {
-    color: #00008B;
+    color: rgba(0, 0, 139, 0.5);
     background: none;
 }
 
