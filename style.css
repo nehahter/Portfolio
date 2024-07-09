@@ -1,70 +1,345 @@
-body {
-    font-family: Arial, sans-serif;
-    color: #f0f0f0;
-    background-color: #0a0a23;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #001f3f;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 5px 0 0;
-    font-size: 1.1em;
-}
-
-header a {
-    color: #39ace7;
+    box-sizing: border-box;
     text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #111;
 }
 
 section {
-    padding: 40px 20px;
-    background-color: #0a0a23;
+    padding: 100px 0;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #39ace7;
-    padding-bottom: 10px;
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    background: #111;
 }
 
-ul {
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .menu li {
     list-style: none;
-    padding: 0;
+    display: inline-block;
 }
 
-li {
-    margin-bottom: 20px;
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    padding: 8px 10px;
+    border-radius: 30px;
+    transition: color 0.3s ease;
 }
 
-strong {
-    color: #39ace7;
+.navbar .menu li a:hover {
+    background-color: crimson;
+    transition: background 0.3s ease;
 }
 
-a {
-    color: #39ace7;
-    text-decoration: none;
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
 }
 
-footer {
-    background-color: #001f3f;
+.home {
+    display: flex;
+    background-color: black;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-1 {
+    font-size: 2rem;
+}
+
+.name-title {
+    font-size: 5rem;
+    color: transparent;
+    -webkit-text-stroke: 1px crimson;
+    position: relative;
+    overflow: hidden;
+}
+
+.name-title::before {
+    content: "Neha Ponnekanti";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 6s linear infinite;
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0;
+        color: transparent;
+    }
+    40% {
+        color: crimson;
+    }
+    50% {
+        color: crimson;
+    }
+    90% {
+        width: 100%;
+        color: crimson;
+    }
+    100% {
+        width: 0;
+        color: transparent;
+    }
+}
+
+.name-title:hover::before {
+    transition: ease-in-out 5s;
+}
+
+.home-content > a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 15px 36px;
+    margin-top: 3.4rem;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.home-content > a:hover {
+    color: crimson;
+    background: none;
+}
+
+.about-content,
+.serv-content,
+.skills-content,
+.project-content,
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
     text-align: center;
-    padding: 20px 0;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.about-content {
+    width: 50em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    left: 12rem;
+}
+
+.services, .teams {
+    color: #fff;
+    background: #111;
+}
+
+.services .title::before, .teams .title::before {
+    background: #fff;
+}
+
+.services .title::after, .teams .title::after {
+    background: #111;
+}
+
+.services .serv-content .card, .project-content .project {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover, .project-content .project:hover {
+    background: crimson;
+}
+
+.services .serv-content .card .box, .project-content .project .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box, .project-content .project:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card .text, .project-content .project .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.skills {
+    height: 100vh;
+}
+
+.column {
+    width: 50%;
+    padding: 40px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.left p {
+    text-align: justify;
+}
+
+.left a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
     margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.left a:hover {
+    color: crimson;
+    background: none;
+}
+
+.bars {
+    margin-bottom: 15px;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills-content .right .python::before {
+    width: 90%;
+}
+
+.skills-content .right .htmlcss::before {
+    width: 85%;
+}
+
+.skills-content .right .c::before {
+    width: 80%;
+}
+
+.skills-content .right .sql::before {
+    width: 75%;
+}
+
+.skills-content .right .flutter::before {
+    width: 70%;
+}
+
+.contact {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #111;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 0 10px;
+    background: crimson;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.socials a:hover {
+    color: crimson;
+    background: none;
+}
+
+.contact p {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 5rem;
 }
