@@ -29,7 +29,7 @@ section {
     z-index: 999;
     padding: 20px 0; /* Decreased height by reducing padding */
     transition: all 0.3s ease;
-    background: #00008B;
+    background: #fff;
 }
 
 .navbar .max-width {
