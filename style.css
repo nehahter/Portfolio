@@ -61,7 +61,7 @@ section {
 }
 
 .navbar .menu li a:hover {
-    background-color: crimson;
+    background-color: #00008B;
     transition: background 0.3s ease;
 }
 
@@ -97,7 +97,7 @@ section {
 .name-title {
     font-size: 5rem;
     color: transparent;
-    -webkit-text-stroke: 1px crimson;
+    -webkit-text-stroke: 1px #00008B;
     position: relative;
     overflow: hidden;
 }
@@ -118,14 +118,14 @@ section {
         color: transparent;
     }
     40% {
-        color: crimson;
+        color: #00008B;
     }
     50% {
-        color: crimson;
+        color: #00008B;
     }
     90% {
         width: 100%;
-        color: crimson;
+        color: #00008B;
     }
     100% {
         width: 0;
@@ -139,19 +139,19 @@ section {
 
 .home-content > a {
     display: inline-block;
-    background: crimson;
+    background: #00008B;
     color: #fff;
     font-size: 25px;
     padding: 15px 36px;
     margin-top: 3.4rem;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #00008B;
     transition: all 0.3s ease;
 }
 
 .home-content > a:hover {
-    color: crimson;
+    color: #00008B;
     background: none;
 }
 
@@ -209,7 +209,7 @@ section {
 }
 
 .services .serv-content .card:hover, .project-content .project:hover {
-    background: crimson;
+    background: #00008B;
 }
 
 .services .serv-content .card .box, .project-content .project .box {
@@ -247,19 +247,19 @@ section {
 
 .left a {
     display: inline-block;
-    background: crimson;
+    background: #00008B;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #00008B;
     transition: all 0.3s ease;
 }
 
 .left a:hover {
-    color: crimson;
+    : #00008B;
     background: none;
 }
 
@@ -292,7 +292,7 @@ section {
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: #00008B;
 }
 
 .skills-content .right .python::before {
@@ -320,13 +320,13 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #111;
+    background-: #111;
 }
 
 .socials a {
     display: inline-block;
     margin: 0 10px;
-    background: crimson;
+    background: #00008B;
     color: #fff;
     padding: 10px 20px;
     border-radius: 6px;
@@ -334,7 +334,7 @@ section {
 }
 
 .socials a:hover {
-    color: crimson;
+    color: #00008B;
     background: none;
 }
 
