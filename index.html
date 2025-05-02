@@ -4,164 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Neha Ponnekanti | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#"><span>Portfolio</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Education</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#projects" class="menu-btn">Projects</a></li>
-                <li><a href="#scholarships" class="menu-btn">Achievements</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#"><span>My</span>Portfolio</a></div>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="#home" class="menu-btn active">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#education" class="menu-btn">Education</a></li>
+                    <li><a href="#skills" class="menu-btn">Skills</a></li>
+                    <li><a href="#projects" class="menu-btn">Projects</a></li>
+                    <li><a href="#achievements" class="menu-btn">Achievements</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <section class="home" id="home">
         <div class="max-width">
-            <div class="home-content"><br><br><br><br><br><br>
-                <div class="text-1" style="color: #709775;">Hi, my name is</div>
+            <div class="home-content" data-aos="fade-up">
+                <div class="text-1">Hi, my name is</div>
                 <div class="name-title">Neha Ponnekanti</div>
-                <a href="/images/Resume - Neha Ponnekanti.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+                <div class="text-2">I'm a <span class="typing"></span></div>
+                <a href="https://drive.google.com/file/d/1yFO7T7U80RkNuS-AI4Z4V8FJTl7EVVBV/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-download">
+                    <i class="fas fa-eye"></i> View my Resume
+                </a>
             </div>
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About Me</h2>
-            <div class="about-content">
-                <p>I am a dedicated student with a passion for technology and innovation. Currently pursuing my Bachelor
-                    of Technology in Computer Science, I have a strong foundation in various programming languages and a
-                    keen interest in AI and Machine Learning. My proactive approach and eagerness to learn have led me
-                    to actively participate in internships, projects, and hackathons, showcasing my ability to thrive in
-                    dynamic environments.</p>
+            <h2 class="title" data-aos="fade-up">About Me</h2>
+            <div class="about-content" data-aos="fade-up">
+                <div class="column left">
+                    <div class="about-img">
+                        <div class="img-box"></div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <p>I am a dedicated student with a passion for technology and innovation. Currently pursuing my Bachelor
+                        of Technology in Computer Science, I have a strong foundation in various programming languages and a
+                        keen interest in AI and Machine Learning. My proactive approach and eagerness to learn have led me
+                        to actively participate in internships, projects, and hackathons, showcasing my ability to thrive in
+                        dynamic environments.</p>
+                    <a href="#skills" class="btn">Read more about my skills</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- <section class="education" id="education">
+    <section class="education" id="education">
         <div class="max-width">
-            <h2 class="title">Education</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <div class="text">B.Tech</div>
-                        <p>ICFAI Foundation for Higher Education, Hyderabad</p>
-                        <p>CGPA: 9.82</p>
+            <h2 class="title" data-aos="fade-up">Education</h2>
+            <div class="education-content">
+                <div class="timeline">
+                    <div class="education-box" data-aos="fade-right">
+                        <div class="education-content">
+                            <div class="year"><i class="fas fa-calendar-alt"></i> 2022 - 2026</div>
+                            <h3>B. Tech in Computer Science</h3>
+                            <p>ICFAI Foundation for Higher Education, Hyderabad</p>
+                            <p class="grade"><i class="fas fa-award"></i> CGPA: 9.82</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <div class="text">12th Grade</div>
-                        <p>Sri Chaitanya Junior Kalasala, Hyderabad</p>
-                        <p>Grade: 98.5%</p>
+                    <div class="education-box" data-aos="fade-left">
+                        <div class="education-content">
+                            <div class="year"><i class="fas fa-calendar-alt"></i> 2020 - 2022</div>
+                            <h3>Intermediate</h3>
+                            <p>Sri Chaitanya Junior Kalasala, ECIL, Hyderabad</p>
+                            <p class="grade"><i class="fas fa-award"></i> Percentage: 98.5%</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <div class="text">10th Grade</div>
-                        <p>Atomic Energy Central School - 1, Hyderabad</p>
-                        <p>Grade: 98%</p>
+                    <div class="education-box" data-aos="fade-right">
+                        <div class="education-content">
+                            <div class="year"><i class="fas fa-calendar-alt"></i> 2020</div>
+                            <h3>10th Grade</h3>
+                            <p>Atomic Energy Central School-1</p>
+                            <p class="grade"><i class="fas fa-award"></i> Percentage: 97.7%</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section> -->
-
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">Education</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <div class="text">B. Tech</div>
-                        <p>2022 - 2026</p>
-                        <p>Computer science</p>
-                        <p>ICFAI Foundation for Higher Education</p>
-                        <p>Hyderabad</p><br>
-                        <p><b>CGPA : 9.82</b></p>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="box">
-
-                        <div class="text">Intermediate</div>
-                        <p>2020 - 2022</p>
-                        <p>Sri Chaitanya Junior Kalasala </p><p>ECIL, Hyderabad</p><br>
-                        <p><b>Percentage : 98.5%</b></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <div class="text">10th Grade</div>
-                        <p>2020</p>
-                        <p>Atomic Energy Central School-1</p><br>
-                        <p><b>Percentage : 97.7%</b></p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
         </div>
     </section>
 
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">Skills & Experiences</h2>
+            <h2 class="title" data-aos="fade-up">Skills & Experiences</h2>
             <div class="skills-content">
-                <div class="column left">
+                <div class="column left" data-aos="fade-right">
                     <p>With expertise in Python, C, HTML, CSS, SQL, Java, and LaTeX, along with tools like Flutter,
                         XAMPP, MySQL Workbench, and Arduino, I have developed a strong technical skillset. My interests
                         lie in algorithm design, data science, deep learning, AI, and web development. My experience
                         includes working as an intern at SRR CloudExpertsGuru and a managed network expert at Chegg
                         India, where I solved complex engineering problems and collaborated with teams to drive project
                         success.</p>
-                    <a href="#scholarships">Read more</a>
+                    <a href="#achievements" class="btn">Check my achievements</a>
                 </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>Python</span>
-                            <span>90%</span>
+                <div class="column right" data-aos="fade-left">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-title">Python</div>
+                            <div class="skill-percentage">90%</div>
                         </div>
-                        <div class="line python"></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress python" data-progress="90%"></div>
+                        </div>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>SQL</span>
-                            <span>90%</span>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-title">SQL</div>
+                            <div class="skill-percentage">90%</div>
                         </div>
-                        <div class="line python"></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress sql" data-progress="90%"></div>
+                        </div>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML & CSS</span>
-                            <span>90%</span>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-title">HTML & CSS</div>
+                            <div class="skill-percentage">90%</div>
                         </div>
-                        <div class="line python"></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress htmlcss" data-progress="90%"></div>
+                        </div>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>C</span>
-                            <span>75%</span>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-title">C</div>
+                            <div class="skill-percentage">75%</div>
                         </div>
-                        <div class="line sql"></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress c" data-progress="75%"></div>
+                        </div>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Java</span>
-                            <span>70%</span>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-title">Java</div>
+                            <div class="skill-percentage">70%</div>
                         </div>
-                        <div class="line flutter"></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress java" data-progress="70%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,97 +166,144 @@
 
     <section class="projects" id="projects">
         <div class="max-width">
-            <h2 class="title">Projects</h2>
-            <div class="project-content">
-                <div class="project">
-                    <div class="box">
-                        <div class="text">Actor Identifier</div>
+            <h2 class="title" data-aos="fade-up">Projects</h2>
+            <div class="projects-content">
+                <div class="project-card" data-aos="flip-left">
+                    <div class="project-box">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="project-title">Actor Identifier</h3>
                         <p>Using machine learning and Python, I developed a system to identify actors with 88% accuracy.
                             This project involved data preprocessing and the implementation of a Support Vector Machine
                             classifier.</p>
-                        <p><a href="https://github.com/nehahter/Actor-Identification" target="_blank">GitHub</a></p>
+                        <a href="https://github.com/nehahter/Actor-Identification" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="box">
-                        <div class="text">Movie Database</div>
+                <div class="project-card" data-aos="flip-up">
+                    <div class="project-box">
+                        <div class="project-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3 class="project-title">Movie Database</h3>
                         <p>Created a movie database website using HTML, CSS, JavaScript, SQL, and PHP. The
                             website allows users to sign up/sign in, browse, search, like, and retrieve movie details from the MySQL
                             database, as well as store user reviews.</p>
-                        <p><a href="https://github.com/nehahter/Moviebase" target="_blank">GitHub</a></p>
+                        <a href="https://github.com/nehahter/Moviebase" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="box">
-                        <div class="text">Smart Mop</div>
+                <div class="project-card" data-aos="flip-right">
+                    <div class="project-box">
+                        <div class="project-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h3 class="project-title">Smart Mop</h3>
                         <p>Engineered a Smart Mop system attached to a remote control car, achieving 100% room-cleaning
                             efficiency using ESP8266 module and ultrasonic sensors. This project won first place at the IoT IGNITE
                             Hackathon.</p>
-                        <p><a href="https://github.com/nehahter/Smart-mop" target="_blank">GitHub</a></p>
+                        <a href="https://github.com/nehahter/Smart-mop" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="ongoing-projects">
         <div class="max-width">
-            <h2 class="title">Ongoing Projects</h2>
-            <div class="project-content">
-                <div class="project">
-                    <div class="box">
-                        <div class="text">Run Raja Run Game</div>
+            <h2 class="title" data-aos="fade-up">Ongoing Projects</h2>
+            <div class="projects-content">
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-box">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3 class="project-title">Run Raja Run Game</h3>
                         <p>Currently developing a runner game in Unity using C# and AI, focusing on game design,
                             character animation, and interactive elements to enhance user experience.</p>
-                        <p><a href="https://github.com/nehahter/Run-raja-run" target="_blank">GitHub</a></p>
+                        <a href="https://github.com/nehahter/Run-raja-run" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="projects" id="scholarships">
+    <section class="achievements" id="achievements">
         <div class="max-width">
-            <h2 class="title">Achievements</h2>
-            <div class="project-content">
-                <div class="project">
-                    <div class="box">
-                        <div class="text">RFUG Scholar</div>
+            <h2 class="title" data-aos="fade-up">Achievements</h2>
+            <div class="achievements-content">
+                <div class="achievement-card" data-aos="fade-up">
+                    <div class="achievement-box">
+                        <div class="achievement-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="achievement-title">RFUG Scholar</h3>
                         <p>I am one among the 5000 candidates selected for Reliance Foundation Undergraduate scholarship Program 2022 - 2026.</p>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="box">
-                        <div class="text">Legrand Scholar</div>
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="achievement-box">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="achievement-title">Legrand Scholar</h3>
                         <p>I was selected as one of the 104 recipients for the academic year 2022-23, and awarded a 
                             cash scholarship totaling Rs. 1,20,000 to date, with ongoing disbursements anticipated until 2026.
                             Also a mentee in the Legrand Mentorship Program.</p>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="box">
-                        <div class="text">ICFAI Tech Scholarship</div>
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="achievement-box">
+                        <div class="achievement-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="achievement-title">ICFAI Tech Scholarship</h3>
                         <p>Awarded a merit-based scholarship of Rs. 5,00,000 in the form of tuition fee waiver for all semesters so far.</p>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
     <section class="contact" id="contact">
-        <p>Connect with me</p>
-        <div class="socials">
-            <a href="https://github.com/nehahter" target="_blank" rel="noopener noreferrer">
-                Github
-            </a>
-            <a href="https://www.linkedin.com/in/neha-ponnekanti" target="_blank" rel="noopener noreferrer">
-                Linkedin
-            </a>
+        <div class="max-width">
+            <h2 class="title" data-aos="fade-up">Contact Me</h2>
+            <div class="contact-content" data-aos="fade-up">
+                <div class="social-links">
+                    <a href="https://github.com/nehahter" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+                    <a href="https://www.linkedin.com/in/neha-ponnekanti" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:nehaponline@gmail.com" class="social-btn">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
+    <footer>
+        <div class="max-width">
+            <div class="footer-content">
+                <p>&copy; 2023 Neha Ponnekanti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
